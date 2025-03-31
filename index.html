@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter - Convert your currency </title>
+   <link rel="stylesheet" href="/styles.css"> 
+ 
+</head>
+
+<body>
+    <nav>
+        <div class="logo">$$Go-Currency$$</div>
+        <ul>
+            <li class="one"><a  href="/">Home</a></li>
+            <li class="one"><a href="/about">About Us</a></li>
+            <li class="one"><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Choose a currency to convert</h1>
+        <form action="/action.php" method="get">
+            <label  for="quantity">Choose a quantity: </label>
+            <input id="two" type="number" name="quantity" min="1" max="10">
+            <label  for="currency">Choose a currency: </label>
+            <select id="three"  name="currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+            </select>
+            <button class="btn" type="submit">Submit</button>
+
+        </form>
+        <div class="output">
+            <h2>Here is your converted values in different currencies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+         Ashish^ Copyright &copy; All rights reserved
+    </footer>
+    <script>
+
+    </script>
+    <script src="logics.js"></script>
+</body>
+
+</html>
